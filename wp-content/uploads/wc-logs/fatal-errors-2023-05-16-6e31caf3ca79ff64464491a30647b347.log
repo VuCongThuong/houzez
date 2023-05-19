@@ -1,0 +1,60 @@
+2023-05-16T11:45:34+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/houzez/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T11:56:37+00:00 CRITICAL Cannot redeclare homez_get_config() (previously declared in /var/www/html/houzez/wp-content/themes/homez/functions.php:353) in /var/www/html/houzez/wp-content/themes/homez/functions.php on line 803
+
+2023-05-16T11:57:04+00:00 CRITICAL Cannot redeclare homez_get_config() (previously declared in /var/www/html/houzez/wp-content/themes/homez/functions.php:353) in /var/www/html/houzez/wp-content/themes/homez/functions.php on line 803
+
+2023-05-16T11:57:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function create_product_while_create_property(), 1 passed in /var/www/html/houzez/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /var/www/html/houzez/wp-content/themes/homez/functions.php:803
+Stack trace:
+#0 /var/www/html/houzez/wp-includes/class-wp-hook.php(310): create_product_while_create_property(Array)
+#1 /var/www/html/houzez/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-submit-form.php(117): apply_filters('wp-realestate-p...', Array, 0)
+#3 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-abstract-form.php(31): WP_RealEstate_Submit_Form->submit_process()
+#4 /var/www/html/houzez/wp-includes/class-wp-hook.php(308): WP_RealEstate_Abstract_Form->process(Object(WP))
+#5 /var/www/html/houzez/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/houzez/wp-includes/plugin.php(565): WP_Hook->do_actio in /var/www/html/houzez/wp-content/themes/homez/functions.php on line 803
+
+2023-05-16T11:58:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function create_product_while_create_property(), 1 passed in /var/www/html/houzez/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /var/www/html/houzez/wp-content/themes/homez/functions.php:803
+Stack trace:
+#0 /var/www/html/houzez/wp-includes/class-wp-hook.php(310): create_product_while_create_property(Array)
+#1 /var/www/html/houzez/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-submit-form.php(117): apply_filters('wp-realestate-p...', Array, 0)
+#3 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-abstract-form.php(31): WP_RealEstate_Submit_Form->submit_process()
+#4 /var/www/html/houzez/wp-includes/class-wp-hook.php(308): WP_RealEstate_Abstract_Form->process(Object(WP))
+#5 /var/www/html/houzez/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/houzez/wp-includes/plugin.php(565): WP_Hook->do_actio in /var/www/html/houzez/wp-content/themes/homez/functions.php on line 803
+
+2023-05-16T12:01:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function create_product_while_create_property(), 1 passed in /var/www/html/houzez/wp-includes/class-wp-hook.php on line 310 and exactly 2 expected in /var/www/html/houzez/wp-content/themes/homez/functions.php:803
+Stack trace:
+#0 /var/www/html/houzez/wp-includes/class-wp-hook.php(310): create_product_while_create_property(Array)
+#1 /var/www/html/houzez/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-submit-form.php(117): apply_filters('wp-realestate-p...', Array, 0)
+#3 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-abstract-form.php(31): WP_RealEstate_Submit_Form->submit_process()
+#4 /var/www/html/houzez/wp-includes/class-wp-hook.php(308): WP_RealEstate_Abstract_Form->process(Object(WP))
+#5 /var/www/html/houzez/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/houzez/wp-includes/plugin.php(565): WP_Hook->do_actio in /var/www/html/houzez/wp-content/themes/homez/functions.php on line 803
+
+2023-05-16T12:43:42+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/houzez/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T12:46:43+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/houzez/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T12:47:47+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/houzez/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T13:13:04+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_productname() in /var/www/html/houzez/wp-content/themes/homez/template-properties/single-property/overview.php:10
+Stack trace:
+#0 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-template-loader.php(127): include()
+#1 /var/www/html/houzez/wp-content/themes/homez/template-properties/content-single-property.php(31): WP_RealEstate_Template_Loader::get_template_part('single-property...')
+#2 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-template-loader.php(127): include('/var/www/html/h...')
+#3 /var/www/html/houzez/wp-content/themes/homez/template-properties/submission/property-submit-preview.php(44): WP_RealEstate_Template_Loader::get_template_part('content-single-...')
+#4 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-template-loader.php(127): include('/var/www/html/h...')
+#5 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-submit-form.php(232): WP_RealEstate_Template_Loader::get in /var/www/html/houzez/wp-content/themes/homez/template-properties/single-property/overview.php on line 10
+
+2023-05-16T13:19:42+00:00 CRITICAL Uncaught Error: Call to undefined function wc_get_productname() in /var/www/html/houzez/wp-content/themes/homez/template-properties/single-property/overview.php:10
+Stack trace:
+#0 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-template-loader.php(127): include()
+#1 /var/www/html/houzez/wp-content/themes/homez/template-properties/content-single-property.php(31): WP_RealEstate_Template_Loader::get_template_part('single-property...')
+#2 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-template-loader.php(127): include('/var/www/html/h...')
+#3 /var/www/html/houzez/wp-content/themes/homez/template-properties/submission/property-submit-preview.php(44): WP_RealEstate_Template_Loader::get_template_part('content-single-...')
+#4 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-template-loader.php(127): include('/var/www/html/h...')
+#5 /var/www/html/houzez/wp-content/plugins/wp-realestate/includes/class-submit-form.php(232): WP_RealEstate_Template_Loader::get in /var/www/html/houzez/wp-content/themes/homez/template-properties/single-property/overview.php on line 10
+

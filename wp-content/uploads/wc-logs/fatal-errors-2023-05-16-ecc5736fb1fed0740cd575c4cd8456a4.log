@@ -1,0 +1,64 @@
+2023-05-16T02:50:20+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T02:52:57+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T02:52:57+00:00 CRITICAL Curl failed with error #400: {"error": {"code": "VALIDATION_ERROR", "description": "'105.7578517,15' is not of type 'number'", "field": "longitude", "instance": "105.7578517,15"}} in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate/includes/class-property-yelp.php on line 70
+
+2023-05-16T02:57:50+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T02:57:51+00:00 CRITICAL Curl failed with error #400: {"error": {"code": "VALIDATION_ERROR", "description": "'105.7578517,15' is not of type 'number'", "field": "longitude", "instance": "105.7578517,15"}} in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate/includes/class-property-yelp.php on line 70
+
+2023-05-16T03:41:33+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T03:55:39+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T03:56:04+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T04:03:29+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T04:11:34+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T04:37:51+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T06:34:23+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T07:38:57+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T07:39:31+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T08:11:53+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T08:26:02+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T08:26:38+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T08:27:56+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T08:27:56+00:00 CRITICAL Curl failed with error #400: {"error": {"code": "VALIDATION_ERROR", "description": "'106.7275253,15' is not of type 'number'", "field": "longitude", "instance": "106.7275253,15"}} in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate/includes/class-property-yelp.php on line 70
+
+2023-05-16T08:40:03+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T08:41:49+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T08:42:03+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T08:43:07+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T08:48:11+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T08:48:44+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T09:07:56+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T09:11:36+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T09:15:25+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T09:18:05+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T10:04:26+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-16T10:04:27+00:00 CRITICAL Curl failed with error #400: {"error": {"code": "VALIDATION_ERROR", "description": "'106.7275253,15' is not of type 'number'", "field": "longitude", "instance": "106.7275253,15"}} in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate/includes/class-property-yelp.php on line 70
+
+2023-05-16T11:43:34+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+

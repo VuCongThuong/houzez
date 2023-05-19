@@ -1,0 +1,22 @@
+2023-05-15T04:35:31+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-15T04:47:00+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-15T04:47:01+00:00 CRITICAL Curl failed with error #400: {"error": {"code": "VALIDATION_ERROR", "description": "'105.7578517,15' is not of type 'number'", "field": "longitude", "instance": "105.7578517,15"}} in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate/includes/class-property-yelp.php on line 70
+
+2023-05-15T04:58:25+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-15T04:58:53+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-15T15:18:53+00:00 CRITICAL Uncaught Error: Call to a member function get_cart_contents() on null in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate-wc-paid-listings/includes/class-wc-cart.php:48
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate-wc-paid-listings/includes/class-wc-cart.php(81): WP_RealEstate_Wc_Paid_Listings_Cart::check_cart_has_property_package()
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/class-wp-hook.php(310): WP_RealEstate_Wc_Paid_Listings_Cart::guest_checkout('yes')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/plugin.php(205): WP_Hook->apply_filters('yes', Array)
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/option.php(253): apply_filters('option_woocomme...', 'yes', 'woocommerce_ena...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/woocommerce/includes/class-wc-tracker.php(686): get_opti in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate-wc-paid-listings/includes/class-wc-cart.php on line 48
+
+2023-05-15T16:20:25+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-15T16:24:46+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+

@@ -1,0 +1,12 @@
+{
+    "name": "thuong/momo",
+    "authors": [
+        {
+            "name": "Thuong",
+            "email": "thuong@redweb.dk"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "7.4"
+    }
+}

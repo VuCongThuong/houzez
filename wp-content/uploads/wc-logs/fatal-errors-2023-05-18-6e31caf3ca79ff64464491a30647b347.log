@@ -1,0 +1,46 @@
+2023-05-18T14:37:37+00:00 CRITICAL Uncaught Error: Call to a member function get_data() on array in /var/www/html/houzez/wp-content/themes/homez/template-order-managentment/index.php:193
+Stack trace:
+#0 /var/www/html/houzez/wp-content/themes/homez/functions.php(862): include_once()
+#1 /var/www/html/houzez/wp-includes/class-wp-hook.php(308): template_order_management('/var/www/html/h...')
+#2 /var/www/html/houzez/wp-includes/plugin.php(205): WP_Hook->apply_filters('/var/www/html/h...', Array)
+#3 /var/www/html/houzez/wp-includes/template-loader.php(104): apply_filters('template_includ...', '/var/www/html/h...')
+#4 /var/www/html/houzez/wp-blog-header.php(19): require_once('/var/www/html/h...')
+#5 /var/www/html/houzez/index.php(17): require('/var/www/html/h...')
+#6 {main}
+  thrown in /var/www/html/houzez/wp-content/themes/homez/template-order-managentment/index.php on line 193
+
+2023-05-18T14:39:43+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Meta_Data as array in /var/www/html/houzez/wp-content/themes/homez/template-order-managentment/index.php:193
+Stack trace:
+#0 /var/www/html/houzez/wp-content/themes/homez/functions.php(862): include_once()
+#1 /var/www/html/houzez/wp-includes/class-wp-hook.php(308): template_order_management('/var/www/html/h...')
+#2 /var/www/html/houzez/wp-includes/plugin.php(205): WP_Hook->apply_filters('/var/www/html/h...', Array)
+#3 /var/www/html/houzez/wp-includes/template-loader.php(104): apply_filters('template_includ...', '/var/www/html/h...')
+#4 /var/www/html/houzez/wp-blog-header.php(19): require_once('/var/www/html/h...')
+#5 /var/www/html/houzez/index.php(17): require('/var/www/html/h...')
+#6 {main}
+  thrown in /var/www/html/houzez/wp-content/themes/homez/template-order-managentment/index.php on line 193
+
+2023-05-18T14:41:26+00:00 CRITICAL Uncaught Error: Call to a member function get_data() on array in /var/www/html/houzez/wp-content/themes/homez/template-order-managentment/index.php:194
+Stack trace:
+#0 /var/www/html/houzez/wp-content/themes/homez/functions.php(862): include_once()
+#1 /var/www/html/houzez/wp-includes/class-wp-hook.php(308): template_order_management('/var/www/html/h...')
+#2 /var/www/html/houzez/wp-includes/plugin.php(205): WP_Hook->apply_filters('/var/www/html/h...', Array)
+#3 /var/www/html/houzez/wp-includes/template-loader.php(104): apply_filters('template_includ...', '/var/www/html/h...')
+#4 /var/www/html/houzez/wp-blog-header.php(19): require_once('/var/www/html/h...')
+#5 /var/www/html/houzez/index.php(17): require('/var/www/html/h...')
+#6 {main}
+  thrown in /var/www/html/houzez/wp-content/themes/homez/template-order-managentment/index.php on line 194
+
+2023-05-18T14:42:04+00:00 CRITICAL Uncaught Error: Call to a member function get_data() on array in /var/www/html/houzez/wp-content/themes/homez/template-order-managentment/index.php:194
+Stack trace:
+#0 /var/www/html/houzez/wp-content/themes/homez/functions.php(862): include_once()
+#1 /var/www/html/houzez/wp-includes/class-wp-hook.php(308): template_order_management('/var/www/html/h...')
+#2 /var/www/html/houzez/wp-includes/plugin.php(205): WP_Hook->apply_filters('/var/www/html/h...', Array)
+#3 /var/www/html/houzez/wp-includes/template-loader.php(104): apply_filters('template_includ...', '/var/www/html/h...')
+#4 /var/www/html/houzez/wp-blog-header.php(19): require_once('/var/www/html/h...')
+#5 /var/www/html/houzez/index.php(17): require('/var/www/html/h...')
+#6 {main}
+  thrown in /var/www/html/houzez/wp-content/themes/homez/template-order-managentment/index.php on line 194
+
+2023-05-18T14:47:26+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/houzez/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+

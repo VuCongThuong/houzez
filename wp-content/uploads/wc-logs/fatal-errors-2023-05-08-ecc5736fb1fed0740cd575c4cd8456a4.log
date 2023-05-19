@@ -1,0 +1,22 @@
+2023-05-08T06:58:22+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-08T06:58:35+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-08T07:00:14+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-08T07:05:56+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-08T07:35:59+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-08T07:41:36+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-08T07:41:36+00:00 CRITICAL Curl failed with error #400: {"error": {"code": "VALIDATION_ERROR", "description": "'105.6997245,12z' is not of type 'number'", "field": "longitude", "instance": "105.6997245,12z"}} in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate/includes/class-property-yelp.php on line 70
+
+2023-05-08T07:56:03+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-08T07:56:05+00:00 CRITICAL Curl failed with error #400: {"error": {"code": "VALIDATION_ERROR", "description": "'105.6997245,12z' is not of type 'number'", "field": "longitude", "instance": "105.6997245,12z"}} in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate/includes/class-property-yelp.php on line 70
+
+2023-05-08T07:57:02+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-08T07:57:02+00:00 CRITICAL Curl failed with error #400: {"error": {"code": "VALIDATION_ERROR", "description": "'105.6997245,12z' is not of type 'number'", "field": "longitude", "instance": "105.6997245,12z"}} in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate/includes/class-property-yelp.php on line 70
+

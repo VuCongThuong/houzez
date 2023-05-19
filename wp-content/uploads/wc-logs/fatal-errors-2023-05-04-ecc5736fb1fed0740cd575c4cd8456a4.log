@@ -1,0 +1,113 @@
+2023-05-04T07:45:34+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-04T15:24:46+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-04T15:24:46+00:00 CRITICAL Curl failed with error #429: {"error": {"code": "ACCESS_LIMIT_REACHED", "description": "You've reached the access limit for this client. See instructions for requesting a higher access limit at https://www.yelp.com/developers/documentation/v3/rate_limiting"}} in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate/includes/class-property-yelp.php on line 70
+
+2023-05-04T15:40:22+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/template-properties/single-property/google-places-content.php on line 78
+
+2023-05-04T15:40:23+00:00 CRITICAL Curl failed with error #429: {"error": {"code": "ACCESS_LIMIT_REACHED", "description": "You've reached the access limit for this client. See instructions for requesting a higher access limit at https://www.yelp.com/developers/documentation/v3/rate_limiting"}} in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/plugins/wp-realestate/includes/class-property-yelp.php on line 70
+
+2023-05-04T15:55:20+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 13
+
+2023-05-04T15:55:30+00:00 CRITICAL syntax error, unexpected end of file in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 13
+
+2023-05-04T15:55:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 12 and exactly 2 expected in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php:63
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php(12): add_shortcode('')
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-settings.php(591): include('/home/hxkhxlvqh...')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-config.php(96): require_once('/home/hxkhxlvqh...')
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-load.php(50): require_once('/home/hxkhxlvqh...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-admin/admin-ajax.php(22): require_once('/home/hxkhxlvqh...')
+#5 {main}
+  thrown in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php on line 63
+
+2023-05-04T15:55:53+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 12 and exactly 2 expected in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php:63
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php(12): add_shortcode('')
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-settings.php(591): include('/home/hxkhxlvqh...')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-config.php(96): require_once('/home/hxkhxlvqh...')
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-load.php(50): require_once('/home/hxkhxlvqh...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-admin/admin-ajax.php(22): require_once('/home/hxkhxlvqh...')
+#5 {main}
+  thrown in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php on line 63
+
+2023-05-04T15:55:59+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 12 and exactly 2 expected in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php:63
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php(12): add_shortcode('')
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-settings.php(591): include('/home/hxkhxlvqh...')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-config.php(96): require_once('/home/hxkhxlvqh...')
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-load.php(50): require_once('/home/hxkhxlvqh...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-admin/admin-ajax.php(22): require_once('/home/hxkhxlvqh...')
+#5 {main}
+  thrown in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php on line 63
+
+2023-05-04T15:56:08+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 12 and exactly 2 expected in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php:63
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php(12): add_shortcode('')
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-settings.php(591): include('/home/hxkhxlvqh...')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-config.php(96): require_once('/home/hxkhxlvqh...')
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-load.php(50): require_once('/home/hxkhxlvqh...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-admin/admin-ajax.php(22): require_once('/home/hxkhxlvqh...')
+#5 {main}
+  thrown in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php on line 63
+
+2023-05-04T15:56:22+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 12 and exactly 2 expected in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php:63
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php(12): add_shortcode('icon-list')
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-settings.php(591): include('/home/hxkhxlvqh...')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-config.php(96): require_once('/home/hxkhxlvqh...')
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-load.php(50): require_once('/home/hxkhxlvqh...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-admin/async-upload.php(20): require_once('/home/hxkhxlvqh...')
+#5 {main}
+  thrown in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php on line 63
+
+2023-05-04T15:56:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 12 and exactly 2 expected in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php:63
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php(12): add_shortcode('icon-list')
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-settings.php(591): include('/home/hxkhxlvqh...')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-config.php(96): require_once('/home/hxkhxlvqh...')
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-load.php(50): require_once('/home/hxkhxlvqh...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-admin/admin-ajax.php(22): require_once('/home/hxkhxlvqh...')
+#5 {main}
+  thrown in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php on line 63
+
+2023-05-04T15:56:38+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 12 and exactly 2 expected in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php:63
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php(12): add_shortcode('icon-list')
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-settings.php(591): include('/home/hxkhxlvqh...')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-config.php(96): require_once('/home/hxkhxlvqh...')
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-load.php(50): require_once('/home/hxkhxlvqh...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-admin/admin-ajax.php(22): require_once('/home/hxkhxlvqh...')
+#5 {main}
+  thrown in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php on line 63
+
+2023-05-04T15:56:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 12 and exactly 2 expected in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php:63
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php(12): add_shortcode('icon-list')
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-settings.php(591): include('/home/hxkhxlvqh...')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-config.php(96): require_once('/home/hxkhxlvqh...')
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-load.php(50): require_once('/home/hxkhxlvqh...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-blog-header.php(13): require_once('/home/hxkhxlvqh...')
+#5 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/index.php(17): requir in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php on line 63
+
+2023-05-04T15:56:50+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 12 and exactly 2 expected in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php:63
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php(12): add_shortcode('icon-list')
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-settings.php(591): include('/home/hxkhxlvqh...')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-config.php(96): require_once('/home/hxkhxlvqh...')
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-load.php(50): require_once('/home/hxkhxlvqh...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-admin/async-upload.php(20): require_once('/home/hxkhxlvqh...')
+#5 {main}
+  thrown in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php on line 63
+
+2023-05-04T15:56:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_shortcode(), 1 passed in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php on line 12 and exactly 2 expected in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php:63
+Stack trace:
+#0 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez-child/functions.php(12): add_shortcode('icon-list')
+#1 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-settings.php(591): include('/home/hxkhxlvqh...')
+#2 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-config.php(96): require_once('/home/hxkhxlvqh...')
+#3 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-load.php(50): require_once('/home/hxkhxlvqh...')
+#4 /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-admin/admin-ajax.php(22): require_once('/home/hxkhxlvqh...')
+#5 {main}
+  thrown in /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-includes/shortcodes.php on line 63
+

@@ -1,0 +1,241 @@
+
+---Downloaded files---
+The import files for: Home were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://houzez.webdesinger.online
+Data file = /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/inc/vendors/one-click-demo-import/data/dummy-data.xml
+Widget file = /home/hxkhxlvqhosting/public_html/houzez.webdesinger.online/wp-content/themes/homez/inc/vendors/one-click-demo-import/data/widgets.wie
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "slider2" (Media)
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+[ERROR] Failed to import "slider73" (Media)
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---ocdi/before_widgets_import---
+
+
+---Importing widgets---
+Sidebar Default : 
+
+Property Detail:: Schedule A Tour - Schedule a tour - Imported
+Property Detail:: Contact Form - Contact %1s - Imported
+Apus Simple Properties List - Featured Properties - Imported
+Apus Simple Properties List - Latest Properties - Imported
+Property Detail:: Schedule A Tour - Schedule a tour - Imported
+Property Detail:: Contact Form - Contact %1s - Imported
+Apus Simple Properties List - Featured Properties - Imported
+Apus Simple Properties List - Latest Properties - Imported
+Property Detail:: Contact Form - Contact %1s - Imported
+
+Sidebar Fixed : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Properties filter sidebar : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Properties filter sidebar 2 : 
+
+Apus Simple Properties List - Featured Properties - Imported
+Apus Simple Properties List - Latest Properties - Imported
+
+Properties filter sidebar 3 : 
+
+Apus Mortgage Calculator Widget - Mortgage Calculator - Imported
+Apus Simple Properties List - Latest Properties - Imported
+
+Properties filter Top sidebar : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Properties filter Top sidebar 2 : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Properties filter Top Map : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Properties filter Top Half Map : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Properties filter Top Half Map 2 : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Property single 1 sidebar : 
+
+Property Detail:: Schedule A Tour - Schedule a tour - Imported
+Property Detail:: Contact Form - Contact %1s - Imported
+
+Property single 2 sidebar : 
+
+Property Detail:: Schedule A Tour - Schedule a tour - Imported
+Property Detail:: Contact Form - Contact %1s - Imported
+Apus Simple Properties List - Featured Properties - Imported
+Apus Simple Properties List - Latest Properties - Imported
+
+Property single 3 sidebar : 
+
+Property Detail:: Contact Form - Contact %1s - Imported
+
+Property single 4 sidebar : 
+
+Property Detail:: Schedule A Tour - Schedule a tour - Imported
+
+Agents filter sidebar : 
+
+Agent Filter - No Title - Imported
+
+Agents filter top sidebar : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Agent single sidebar : 
+
+Agent|Agency Detail:: Contact Form - Contact %1s - Imported
+Agent Detail:: Information - Professional Information - Imported
+Private Message Form - Send Message to %1s - Imported
+
+Agencies filter sidebar : 
+
+Agency Filter - No Title - Imported
+
+Agencies filter top sidebar : 
+
+Apus Show Elementor Template Widget - No Title - Imported
+
+Agency single sidebar : 
+
+Agent|Agency Detail:: Contact Form - Contact %1s - Imported
+Agency Detail:: Information - Professional Information - Imported
+Private Message Form - Send Message to %1s - Imported
+
+User Profile sidebar : 
+
+Apus User Short Profile - No Title - Imported
+
+Blog sidebar : 
+
+Apus Search Widget - No Title - Imported
+Block - No Title - Imported
+Apus Recent Posts Widget - Latest Post - Imported
+Block - No Title - Imported
+
+Shop sidebar : 
+
+Apus Search Widget - No Title - Imported
+Block - No Title - Imported
+Block - No Title - Imported
+
+
+
+---ocdi/after_import---
+

@@ -1,0 +1,41 @@
+/*
+ Theme Name:   Homez Child
+ Theme URI:    https://themeforest.net/item/homez-real-estate-wordpress-theme/44173800
+ Description:  Homez Child Theme
+ Author:       ApusTheme
+ Author URI:   http://apusthemes.com
+ Template:     homez
+ Version:      1.0.0
+ Text Domain:  homez-child
+*/
+
+.elementor-element-248d3d5 .elementor-icon-list-icon i,
+.elementor-element-248d3d5 .elementor-icon-list-text{
+    color: #FFFFFF;
+}
+.elementor-element-248d3d5 a{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1em;
+}
+.elementor-element-248d3d5 .elementor-widget-container{
+    margin: 4px 30px 0px 0px;
+}
+.elementor-element-248d3d5 .elementor-icon-list-items .elementor-icon-list-item{
+    margin-right: 24px !important;
+}
+.custom-loading{
+    position: fixed;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 999;
+    opacity: 1;
+}
+.select2-container--default.select2-container--disabled .select2-selection--single{
+	background-color: #fff !important;
+}
