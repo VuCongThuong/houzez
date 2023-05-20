@@ -19,13 +19,13 @@
       $product_id =$item->get_data()['product_id'];
       $agent = wc_get_product($product_id)->short_description;
   }
-    // Only admin and agent are allowed
+    // If is_agent, show only agent's order
     if (current_user_can('wp_realestate_agent') && $agent != $current_user->user_login)
     {
       continue;
     }
 
-    // Process search
+    // Filter order if search by date
     if ($_POST['name-product'] && !str_contains($product_name, $_POST['name-product']))
       {
         continue;
@@ -46,17 +46,17 @@
         continue;
       }
 
+    $price_agent = round($data_order['total'] * 0.99);
+    $price_host = round($data_order['total'] * 0.1);
 
-      // Process action to calculate debt
+    // Calculate debt
     $meta_data = $order->get_meta('custom_order_field');
+
     if (!$meta_data)
       {
         $total_debt += $price_agent;
       }
 
-
-    $price_agent = round($data_order['total'] * 0.99);
-    $price_host = round($data_order['total'] * 0.1);
     $total_amount += $data_order['total'];
     $total_return_agent += $price_agent;
 
