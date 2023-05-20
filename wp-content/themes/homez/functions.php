@@ -895,3 +895,12 @@ function save_custom_order_field($post_id) {
     }
 }
 add_action('save_post_shop_order', 'save_custom_order_field');
+
+
+function add_order_management_button($items, $args) {
+    if ($args->theme_location == 'primary' && (current_user_can('administrator') || current_user_can('wp_realestate_agent'))) 		{
+		$items .= '<li class="menu-item"><a href="quan-ly-order">Quản Lý Order</a></li>';
+    	}
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'add_order_management_button', 10, 2);
