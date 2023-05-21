@@ -1,4 +1,26 @@
 <?php
+    // Process confirm sales
+    if ($_POST['answer-order'] && $_POST['answer'])
+    {
+      $result = update_post_meta($_POST['answer-order'], 'confirm_sales', $_POST['answer']);
+
+      if ($result)
+      {
+        $status = 'wc-failed';
+        if ($_POST['answer'] == 'yes')
+        {
+          $status = 'wc-processing';
+        }
+        $order_data = array(
+          'ID' => $_POST['answer-order'],
+          'post_status' => $status,
+      );
+
+        wp_update_post($order_data);
+        echo '<script>window.location.href = window.location.href;</script>';
+      }
+    }
+
   global $current_user; wp_get_current_user();
   $all_orders = wc_get_orders([]);
   $i=1;
@@ -18,12 +40,13 @@
       $product_name .= $item->get_name() . ' ';
       $product_id =$item->get_data()['product_id'];
       $agent = wc_get_product($product_id)->short_description;
-  }
+    }
+
     // If is_agent, show only agent's order
     if (current_user_can('wp_realestate_agent') && $agent != $current_user->user_login)
-    {
-      continue;
-    }
+      {
+        continue;
+      }
 
     // Filter order if search by date
     if ($_POST['name-product'] && !str_contains($product_name, $_POST['name-product']))
@@ -46,8 +69,31 @@
         continue;
       }
 
+
+    // Process radio input
+    $yes ='';
+    $no ='';
+    if ($order->get_meta('confirm_sales'))
+    {
+      if ($order->get_meta('confirm_sales') == 'yes') {
+        $yes = 'checked';
+      } else {
+        $no = 'checked';
+      }
+    }
+
+    $disabled = '';
+    $background = '';
+    // Process refunded order
+    if ($order->get_parent_id() || $order->get_status() == 'refunded')
+    {
+      $disabled = 'disabled';
+      $background = 'style="background-color: red"';
+    }
+
+
     $price_agent = round($data_order['total'] * 0.99);
-    $price_host = round($data_order['total'] * 0.1);
+    $price_host = round($data_order['total'] * 0.01);
 
     // Calculate debt
     $meta_data = $order->get_meta('custom_order_field');
@@ -71,6 +117,20 @@
     $data .= '<td>'.wc_price($price_host).'</td>';
     $data .= '<td>'.wc_get_order_statuses()['wc-'.$data_order['status']].'</td>';
     $data .= '<td class="text-center">'.$meta_data.'</td>';
+    $data .= '<form method="post">
+                <td '.$background.'>
+                  <label>
+                    <input '.$yes.' type="radio" name="answer" value="yes">
+                    Yes
+                  </label>
+                  <label>
+                    <input '.$no.' type="radio" name="answer" value="no">
+                    No
+                  </label>
+                <input type="hidden" name="answer-order" value="'.$order->get_id().'">
+                <button '.$disabled.' type="submit">Xác Nhận</button>
+                </td>
+              </form>';
     $data .= '</tr>';
   }
 
@@ -227,8 +287,16 @@
                         <div class="col-2">
                           <div class="input-group">
                             <select name="status-order" class="form-select" id="inputGroupSelect02">
-                            <option value="">Trạng Thái Đơn Hàng</option>
                               <?php
+
+                              if ($_POST['status-order'])
+                              {
+                                echo '<option value="'.$_POST['status-order'].'">'.wc_get_order_statuses()[$_POST['status-order']].'</option>';
+
+                              }else{
+                                echo '<option value="">Trạng Thái Đơn Hàng</option>';
+                              }
+
                               foreach(wc_get_order_statuses() as $key => $name)
                               {
                                 echo '<option value="'.$key.'">'.$name.'</option>';
@@ -268,10 +336,11 @@
                   <th>Trả cho host</th>
                   <th>Trạng thái</th>
                   <th>Action</th>
+                  <th>Xác nhận bán hàng</th>
                 </tr>
               </thead>
               <tbody class="align-middle">
-                <?=$data?>
+                  <?=$data?>
               </tbody>
             </table>
           </div>
