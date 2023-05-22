@@ -43,7 +43,7 @@
     }
 
     // If is_agent, show only agent's order
-    if (current_user_can('wp_realestate_agent') && $agent != $current_user->user_login)
+    if ((current_user_can('wp_realestate_agent') || current_user_can('wp_realestate_agency')) && $agent != $current_user->user_login)
       {
         continue;
       }
@@ -91,17 +91,20 @@
       $background = 'style="background-color: red"';
     }
 
+    // Calculate total price only successful order
+    if (!$order->get_parent_id() && $order->get_status() == 'completed') {
+      $price_agent = round($data_order['total'] * 0.99);
+      $price_host = round($data_order['total'] * 0.01);
 
-    $price_agent = round($data_order['total'] * 0.99);
-    $price_host = round($data_order['total'] * 0.01);
+      // Calculate debt
+      $meta_data = $order->get_meta('custom_order_field');
 
-    // Calculate debt
-    $meta_data = $order->get_meta('custom_order_field');
+      if (!$meta_data)
+        {
+          $total_debt += $price_agent;
+        }
+    }
 
-    if (!$meta_data)
-      {
-        $total_debt += $price_agent;
-      }
 
     $total_amount += $data_order['total'];
     $total_return_agent += $price_agent;
@@ -265,17 +268,18 @@
                         <div class="col-2">
                           <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
                             <input id="start-date" name="start-date" type="text" data-input class="form-control input-numeric input-date text-center" data-target="#datetimepicker1" value="<?=$_POST['start-date']?>"/>
-                            <span class="input-group-text spancal" data-toggle>
+                            <label for="start-date"><span class="input-group-text spancal" data-toggle>
                               <i class="fa fa-calendar"></i>
-                            </span>
+                            </span></label>
                           </div>
                         </div>
                         <div class="col-2">
                             <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
                               <input id="end-date" name="end-date" type="text" data-input class="form-control input-numeric input-date text-center" data-target="#datetimepicker1" value="<?=$_POST['end-date']?>"/>
-                              <span class="input-group-text spancal" data-toggle>
+                              <label for="end-date"><span class="input-group-text spancal" data-toggle>
                                 <i class="fa fa-calendar"></i>
-                              </span>
+                              </span></label>
+
                             </div>
                         </div>
 
@@ -353,6 +357,7 @@
   <p></p>
   <p></p>
   <p style="text-align: center;">Lưu ý: Nếu trường Action bỏ trống, nghĩa là host chưa thanh toán tiền cho Agent</p>
+    <p style="text-align: center;">Total Amount chỉ được tính khi Tình Trạng Đơn Hàng Thành Công (Agent xác nhận "Yes" -> Đang Xử Lý -> Admin: Đơn Hàng Thành Công)</p>
 
 
 </div>

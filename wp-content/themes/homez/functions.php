@@ -857,7 +857,10 @@ function template_order_management($template)
 	global $wp;
 	$URI = $_SERVER['REQUEST_URI'];
 
-	if (str_contains($URI, 'quan-ly-order') && (current_user_can('administrator') || current_user_can('wp_realestate_agent')))
+	if (str_contains($URI, 'quan-ly-order') 
+	&& (current_user_can('administrator')
+	|| current_user_can('wp_realestate_agent')
+	|| current_user_can('wp_realestate_agency')))
 	{
 		include_once get_template_directory() . '/template-order-managentment/index.php';
 
@@ -867,6 +870,7 @@ function template_order_management($template)
 return $template;
 }
 
+// Add custom fields to order management
 function add_custom_order_meta_box() {
     add_meta_box(
         'custom-order-field',
@@ -914,9 +918,9 @@ function save_custom_order_field($post_id) {
 add_action('save_post_shop_order', 'save_custom_order_field');
 
 
-
+// Add nav menu items
 function add_order_management_button($items, $args) {
-    if ($args->theme_location == 'primary' && (current_user_can('administrator') || current_user_can('wp_realestate_agent'))) 		{
+    if ($args->theme_location == 'primary' && (current_user_can('administrator') || current_user_can('wp_realestate_agent') ||  current_user_can('wp_realestate_agency'))) 		{
 		$items .= '<li class="menu-item"><a href="quan-ly-order">Quản Lý Order</a></li>';
     	}
     return $items;
