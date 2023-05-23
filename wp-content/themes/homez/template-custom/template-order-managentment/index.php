@@ -75,8 +75,11 @@ include_once __DIR__ . '/template.php';
     // Process radio input
     $yes ='';
     $no ='';
+    $disabled = '';
     if ($order->get_meta('confirm_sales'))
     {
+      $disabled = 'disabled';
+
       if ($order->get_meta('confirm_sales') == 'yes') {
         $yes = 'checked';
       } else {
@@ -84,7 +87,6 @@ include_once __DIR__ . '/template.php';
       }
     }
 
-    $disabled = '';
     $background = '';
     // Process refunded order
     if ($order->get_parent_id() || $order->get_status() == 'refunded')

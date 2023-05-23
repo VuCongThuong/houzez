@@ -837,8 +837,5 @@ function create_product_while_create_property($post_id)
 		$product->save();
 	}
 }
-// echo '<pre>';
-// print_r(get_template_directory());
-// echo '</pre>';
-// die('thuongtest');
+
 require_once get_template_directory() . '/template-custom/functions.php';
