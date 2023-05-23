@@ -60,19 +60,18 @@ include_once __DIR__ . '/template.php';
       }
 
 
-    $disabled = '';
     // Process refunded order
-    if ($order->get_parent_id() || $order->get_status() == 'refunded')
+    $disabled = '';
+    if (
+      $order->get_parent_id() || $order->get_status() == 'refunded' || 
+      $order->get_status() == 'cancelled')
     {
-      $disabled = 'disab
-      led';
+      $disabled = 'disabled';
     }
     $thankyou_page_url ='#';
     try {
       $thankyou_page_url = $order->get_checkout_order_received_url();
-    } catch (\Throwable $th) {
-      //throw $th;
-    }
+    } catch (\Throwable $th) {}
 
     $total_amount += $data_order['total'];
     $data .= '<tr class="text-center">';

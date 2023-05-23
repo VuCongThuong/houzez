@@ -109,6 +109,19 @@ include_once __DIR__ . '/template.php';
         }
     }
 
+    // Process status
+    $option = '<option value="">Unknown</option>';
+    if ($data_order['status'])
+    {
+      $status = 'wc-'.$data_order['status'];
+
+      $option = '<option value="'.$status.'">'.wc_get_order_statuses()[$status].'</option>';
+    }
+
+    foreach(wc_get_order_statuses() as $key => $name)
+    {
+      $option .= '<option value="'.$key.'">'.$name.'</option>';
+    }
 
     $total_amount += $data_order['total'];
     $total_return_agent += $price_agent;
@@ -122,8 +135,7 @@ include_once __DIR__ . '/template.php';
     $data .= '<td>'.wc_price($data_order['total']).'</td>';
     $data .= '<td>'.wc_price($price_agent).'</td>';
     $data .= '<td>'.wc_price($price_host).'</td>';
-    $data .= '<td>'.wc_get_order_statuses()['wc-'.$data_order['status']].'</td>';
-    $data .= '<td class="text-center">'.$meta_data.'</td>';
+    $data .= '<td><select name="status-order" class="form-select">'.$option.'</td>';
     $data .= '<form method="post">
                 <td '.$background.'>
                   <label>
@@ -138,6 +150,7 @@ include_once __DIR__ . '/template.php';
                 <button '.$disabled.' type="submit">Xác Nhận</button>
                 </td>
               </form>';
+    $data .= '<td class="text-center">'.$meta_data.'</td>';
     $data .= '</tr>';
   }
 
@@ -273,7 +286,6 @@ include_once __DIR__ . '/template.php';
                           <div class="input-group">
                             <select name="status-order" class="form-select" id="inputGroupSelect02">
                               <?php
-
                               if ($_POST['status-order'])
                               {
                                 echo '<option value="'.$_POST['status-order'].'">'.wc_get_order_statuses()[$_POST['status-order']].'</option>';
@@ -319,8 +331,8 @@ include_once __DIR__ . '/template.php';
                   <th>Trả cho agent</th>
                   <th>Trả cho host</th>
                   <th>Trạng thái</th>
-                  <th>Action</th>
                   <th>Xác nhận bán hàng</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody class="align-middle">
