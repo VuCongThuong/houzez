@@ -11,8 +11,7 @@ include_once __DIR__ . '/template.php';
     echo '<script>window.location.href = window.location.href;</script>';
   }
 
-  global $current_user; wp_get_current_user();
-  $all_orders = wc_get_orders([]);
+  $all_orders = wc_get_orders(['customer' => get_current_user_id()]);
   $i=1;
   $total_amount = 0;
   $total_return_agent = 0;
@@ -31,12 +30,6 @@ include_once __DIR__ . '/template.php';
       $product_id =$item->get_data()['product_id'];
       $agent = wc_get_product($product_id)->short_description;
     }
-
-    // If is_agent, show only agent's order
-    if ((current_user_can('wp_realestate_agent') || current_user_can('wp_realestate_agency')) && $agent != $current_user->user_login)
-      {
-        continue;
-      }
 
     // Filter order if search by date
     if ($_POST['name-product'] && !str_contains($product_name, $_POST['name-product']))

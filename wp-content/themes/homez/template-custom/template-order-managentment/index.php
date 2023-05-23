@@ -23,6 +23,17 @@ include_once __DIR__ . '/template.php';
       }
     }
 
+    // Process admin change order status
+    if ($_POST['status-order-id'])
+    {
+      $order_data = array(
+        'ID' => $_POST['status-order-id'],
+        'post_status' => $_POST['status-order']);
+  
+      wp_update_post($order_data);
+      echo '<script>window.location.href = window.location.href;</script>';
+    }
+
   global $current_user; wp_get_current_user();
   $all_orders = wc_get_orders([]);
   $i=1;
@@ -76,6 +87,7 @@ include_once __DIR__ . '/template.php';
     $yes ='';
     $no ='';
     $disabled = '';
+    $notAdmin = '';
     if ($order->get_meta('confirm_sales'))
     {
       $disabled = 'disabled';
@@ -92,21 +104,8 @@ include_once __DIR__ . '/template.php';
     if ($order->get_parent_id() || $order->get_status() == 'refunded')
     {
       $disabled = 'disabled';
+      $notAdmin = 'disabled';
       $background = 'style="background-color: red"';
-    }
-
-    // Calculate total price only successful order
-    if (!$order->get_parent_id() && $order->get_status() == 'completed') {
-      $price_agent = round($data_order['total'] * 0.99);
-      $price_host = round($data_order['total'] * 0.01);
-
-      // Calculate debt
-      $meta_data = $order->get_meta('custom_order_field');
-
-      if (!$meta_data)
-        {
-          $total_debt += $price_agent;
-        }
     }
 
     // Process status
@@ -123,8 +122,29 @@ include_once __DIR__ . '/template.php';
       $option .= '<option value="'.$key.'">'.$name.'</option>';
     }
 
-    $total_amount += $data_order['total'];
-    $total_return_agent += $price_agent;
+    if (!current_user_can('administrator'))
+    {
+      $notAdmin = 'disabled';
+    }
+
+    // Calculate total price only successful order
+    if (!$order->get_parent_id() && $order->get_status() == 'completed') {
+      $price_agent = round($data_order['total'] * 0.99);
+      $price_host = round($data_order['total'] * 0.01);
+
+      // Calculate total prices
+      $meta_data = $order->get_meta('custom_order_field');
+
+      if (!$meta_data)
+        {
+          $total_debt += $price_agent;
+        }
+
+      $total_amount += $data_order['total'];
+      $total_return_agent += $price_agent;
+    }
+
+
 
     $data .= '<tr class="text-center">';
     $data .= '<td class="text-center">'.$i++.'</td>';
@@ -135,7 +155,12 @@ include_once __DIR__ . '/template.php';
     $data .= '<td>'.wc_price($data_order['total']).'</td>';
     $data .= '<td>'.wc_price($price_agent).'</td>';
     $data .= '<td>'.wc_price($price_host).'</td>';
-    $data .= '<td><select name="status-order" class="form-select">'.$option.'</td>';
+    $data .= '<form method="post">
+    <td><select name="status-order" class="form-select">'.$option.'
+      <input type="hidden" name="status-order-id" value="'.$order->get_id().'">
+      <button '.$notAdmin.' type="submit">Xác Nhận</button>
+    </td></form>
+    ';
     $data .= '<form method="post">
                 <td '.$background.'>
                   <label>
