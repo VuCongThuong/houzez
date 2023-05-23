@@ -152,7 +152,7 @@ include_once __DIR__ . '/template.php';
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="<?=home_url()?>"><img src="<?=get_bloginfo( 'template_directory' )?>/template-order-managentment/assets/images/logo-houzez.png" alt="logo" width="100"></a>
+              <a class="navbar-brand" href="<?=home_url()?>"><img src="<?=get_bloginfo( 'template_directory' )?>/template-custom/template-order-managentment/assets/images/logo-houzez.png" alt="logo" width="100"></a>
 
               <div class="collapse navbar-collapse mx-5" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">

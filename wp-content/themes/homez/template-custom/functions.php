@@ -28,6 +28,13 @@ function template_order_management($template)
 		$template = '';
 	}
 
+    if (str_contains($URI, 'quan-ly-order') && current_user_can('customer'))
+    {
+        include_once get_template_directory() . '/template-custom/template-order-managentment/user.php';
+
+		$template = '';
+    }
+
 return $template;
 }
 
@@ -81,7 +88,11 @@ add_action('save_post_shop_order', 'save_custom_order_field');
 
 // Add nav menu items
 function add_order_management_button($items, $args) {
-    if ($args->theme_location == 'primary' && (current_user_can('administrator') || current_user_can('wp_realestate_agent') ||  current_user_can('wp_realestate_agency'))) 		{
+    if ($args->theme_location == 'primary' && (current_user_can('administrator')
+    || current_user_can('wp_realestate_agent')
+    ||  current_user_can('wp_realestate_agency')
+    ||  current_user_can('customer'))){
+
 		$items .= '<li class="menu-item"><a href="quan-ly-order">Quản Lý Order</a></li>';
     	}
     return $items;
