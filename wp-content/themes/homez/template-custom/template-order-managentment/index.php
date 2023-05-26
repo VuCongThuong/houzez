@@ -52,11 +52,11 @@ include_once __DIR__ . '/template.php';
     foreach ( $items as $item ) {
       $product_name .= $item->get_name() . ' ';
       $product_id =$item->get_data()['product_id'];
-      $agent = wc_get_product($product_id)->short_description;
+      $agent .= wc_get_product($product_id)->short_description;
     }
 
     // If is_agent, show only agent's order
-    if ((current_user_can('wp_realestate_agent') || current_user_can('wp_realestate_agency')) && $agent != $current_user->user_login)
+    if ((current_user_can('wp_realestate_agent') || current_user_can('wp_realestate_agency')) && str_contains($agent, $current_user->user_login))
       {
         continue;
       }

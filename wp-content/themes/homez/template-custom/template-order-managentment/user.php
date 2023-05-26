@@ -28,7 +28,7 @@ include_once __DIR__ . '/template.php';
     foreach ( $items as $item ) {
       $product_name .= $item->get_name() . ' ';
       $product_id =$item->get_data()['product_id'];
-      $agent = wc_get_product($product_id)->short_description;
+      $agent .= wc_get_product($product_id)->short_description;
     }
 
     // Filter order if search by date
