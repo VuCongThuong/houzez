@@ -1,4 +1,16 @@
 <?php
+// DEFINE CONSTANCES
+define('URL_CUSTOM_TEMPLATE',get_bloginfo( 'template_directory' ).'/template-custom');
+
+define('URL_ORDER_MANAGEMENT_TEMPLATE',URL_CUSTOM_TEMPLATE.'/template-order-managentment');
+
+define('URL_BOOKING_TEMPLATE',URL_CUSTOM_TEMPLATE.'/template-booking');
+
+// PATH
+define('PATH_ORDER_MANAGEMENT_TEMPLATE', get_template_directory().'/template-custom/template-order-managentment');
+
+define('PATH_BOOKING_TEMPLATE', get_template_directory().'/template-custom/template-booking');
+
 // Get add-to-cart for Properties
 add_action( 'wp-realestate-single-property-overview', 'show_add_to_cart_for_property_posts' );
 function show_add_to_cart_for_property_posts($post)
@@ -11,26 +23,36 @@ function show_add_to_cart_for_property_posts($post)
 	}
 }
 
-add_filter('template_include','template_order_management');
+add_filter('template_include','template_custom');
 
-function template_order_management($template)
+function template_custom($template)
 {
 	global $wp;
 	$URI = $_SERVER['REQUEST_URI'];
 
+    // Template order-management for admin/agency/agent
 	if (str_contains($URI, 'quan-ly-order') 
 	&& (current_user_can('administrator')
 	|| current_user_can('wp_realestate_agent')
 	|| current_user_can('wp_realestate_agency')))
 	{
-		include_once get_template_directory() . '/template-custom/template-order-managentment/index.php';
+		include_once PATH_ORDER_MANAGEMENT_TEMPLATE .'/index.php';
 
 		$template = '';
 	}
 
+    // Template order-management for users
     if (str_contains($URI, 'quan-ly-order') && current_user_can('customer'))
     {
-        include_once get_template_directory() . '/template-custom/template-order-managentment/user.php';
+        include_once PATH_ORDER_MANAGEMENT_TEMPLATE .'/user.php';
+
+		$template = '';
+    }
+
+    // Template booking for users
+    if (str_contains($URI, 'booking'))
+    {
+        include_once PATH_BOOKING_TEMPLATE .'/index.php';
 
 		$template = '';
     }
@@ -50,7 +72,6 @@ function add_custom_order_meta_box() {
     );
 }
 add_action('add_meta_boxes', 'add_custom_order_meta_box');
-
 function render_custom_order_field($post) {
     $custom_field_value = get_post_meta($post->ID, 'custom_order_field', true);
     $confirm_sales_value = get_post_meta($post->ID, 'confirm_sales', true);
@@ -88,13 +109,19 @@ add_action('save_post_shop_order', 'save_custom_order_field');
 
 // Add nav menu items
 function add_order_management_button($items, $args) {
-    if ($args->theme_location == 'primary' && (current_user_can('administrator')
+    // Order management
+    if ($args->theme_location == 'primary'
+    && (current_user_can('administrator')
     || current_user_can('wp_realestate_agent')
-    ||  current_user_can('wp_realestate_agency')
-    ||  current_user_can('customer'))){
-
+    || current_user_can('wp_realestate_agency')
+    || current_user_can('customer'))){
 		$items .= '<li class="menu-item"><a href="quan-ly-order">Quản Lý Order</a></li>';
     	}
+
+    // Booking
+    if ($args->theme_location == 'primary'){
+        $items .= '<li class="menu-item"><a href="booking">Booking</a></li>';
+    }
     return $items;
 }
 add_filter('wp_nav_menu_items', 'add_order_management_button', 10, 2);
